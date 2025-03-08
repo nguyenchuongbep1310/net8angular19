@@ -139,3 +139,4 @@ API/obj/Debug/net8.0/refint/API.dll
 API/obj/Debug/net8.0/staticwebassets/msbuild.build.API.props
 API/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.API.props
 API/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.API.props
+.DS_Store
