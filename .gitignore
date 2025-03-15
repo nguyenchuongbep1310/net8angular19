@@ -154,3 +154,4 @@ API/obj/rider.project.restore.info
 API/obj/rider.project.model.nuget.info
 API/obj/project.packagespec.json
 API/appsettings.json
+bin/debug/appsettings.json
