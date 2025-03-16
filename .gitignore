@@ -155,3 +155,5 @@ API/obj/rider.project.model.nuget.info
 API/obj/project.packagespec.json
 API/appsettings.json
 bin/Debug
+.vscode
+.idea
