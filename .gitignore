@@ -157,3 +157,5 @@ API/appsettings.json
 bin/Debug
 .vscode
 .idea
+API/bin/Debug/net8.0/appsettings.json
+API/appsettings.json
