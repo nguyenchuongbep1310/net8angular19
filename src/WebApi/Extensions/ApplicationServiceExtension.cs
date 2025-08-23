@@ -1,10 +1,9 @@
-using API.Data;
 using API.Helpers;
-using API.Interfaces;
-using API.Services;
-using Microsoft.EntityFrameworkCore;
+using Application.Interfaces;
+using Application.Services;
+using Infrastructure.Data;
 
-namespace API.Extensions
+namespace WebApi.Extensions
 {
     public static class ApplicationServiceExtension
     {

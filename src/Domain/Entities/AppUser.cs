@@ -1,6 +1,5 @@
-using API.Extensions;
 
-namespace API.Entities
+namespace Domain.Entities
 {
     public class AppUser
     {

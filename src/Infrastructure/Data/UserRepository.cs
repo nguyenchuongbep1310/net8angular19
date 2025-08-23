@@ -1,12 +1,9 @@
-using API.DTOs;
-using API.Entities;
 using API.Helpers;
-using API.Interfaces;
-using AutoMapper;
-using AutoMapper.QueryableExtensions;
-using Microsoft.EntityFrameworkCore;
+using Application.DTOs;
+using Application.Interfaces;
+using Domain.Entities;
 
-namespace API.Data
+namespace Infrastructure.Data
 {
     public class UserRepository(DataContext context, IMapper mapper) : IUserRepository
     {

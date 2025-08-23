@@ -1,8 +1,7 @@
-using API.DTOs;
-using API.Entities;
-using API.Helpers;
+using Application.DTOs;
+using Domain.Entities;
 
-namespace API.Interfaces
+namespace Application.Interfaces
 {
     public interface IUserRepository
     {

@@ -1,7 +1,4 @@
-using API.Entities;
-using Microsoft.EntityFrameworkCore;
-
-namespace API.Data
+namespace Infrastructure.Data
 {
 
     public class DataContext(DbContextOptions options) : DbContext(options)

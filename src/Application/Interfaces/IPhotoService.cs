@@ -1,6 +1,4 @@
-using CloudinaryDotNet.Actions;
-
-namespace API.Interfaces
+namespace Application.Interfaces
 {
     public interface IPhotoService
     {
