@@ -1,33 +1,39 @@
 {
   "format": 1,
   "restore": {
-    "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Infrastructure/Infrastructure.csproj": {}
+    "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Application/Application.csproj": {
+    "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Application/Application.csproj",
+        "projectUniqueName": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Application\\Application.csproj",
         "projectName": "Application",
-        "projectPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Application/Application.csproj",
-        "packagesPath": "/Users/chuongnguyen/.nuget/packages/",
-        "outputPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Application/obj/",
+        "projectPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Application\\Application.csproj",
+        "packagesPath": "C:\\Users\\chuong.nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/chuongnguyen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chuong.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj"
+              "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -41,11 +47,34 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "AutoMapper": {
+              "target": "Package",
+              "version": "[15.0.1, )"
+            },
+            "CloudinaryDotNet": {
+              "target": "Package",
+              "version": "[1.26.2, )"
+            },
+            "Microsoft.AspNetCore.Http.Features": {
+              "target": "Package",
+              "version": "[5.0.17, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.Extensions.Configuration.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.8, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -62,26 +91,32 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj": {
+    "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj",
+        "projectUniqueName": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj",
-        "packagesPath": "/Users/chuongnguyen/.nuget/packages/",
-        "outputPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/obj/",
+        "projectPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\chuong.nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/chuongnguyen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chuong.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -99,7 +134,8 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -120,37 +156,43 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Infrastructure/Infrastructure.csproj": {
+    "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Infrastructure/Infrastructure.csproj",
+        "projectUniqueName": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Infrastructure/Infrastructure.csproj",
-        "packagesPath": "/Users/chuongnguyen/.nuget/packages/",
-        "outputPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Infrastructure/obj/",
+        "projectPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Infrastructure\\Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\chuong.nguyen\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/chuongnguyen/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\chuong.nguyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Application/Application.csproj": {
-                "projectPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Application/Application.csproj"
+              "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Application\\Application.csproj": {
+                "projectPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Application\\Application.csproj"
               },
-              "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj": {
-                "projectPath": "/Users/chuongnguyen/Downloads/Coding/net8angular19/src/Domain/Domain.csproj"
+              "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj": {
+                "projectPath": "C:\\Users\\chuong.nguyen\\Downloads\\net8angular19\\src\\Domain\\Domain.csproj"
               }
             }
           }
@@ -164,11 +206,42 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.8, )"
+            },
+            "System.IdentityModel.Tokens.Jwt": {
+              "target": "Package",
+              "version": "[8.14.0, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -185,7 +258,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.406/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
