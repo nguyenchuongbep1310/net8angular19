@@ -10,13 +10,14 @@ using Microsoft.AspNetCore.Mvc;
 namespace API.Controllers;
 
 [Authorize]
-public class UsersController(IUserRepository userRepository, IMapper mapper, 
-    IPhotoService photoService) : BaseApiController
+public class UsersController(IUserRepository userRepository, IMapper mapper, IPhotoService photoService) : BaseApiController
 {
     [HttpGet]
-    public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers()
+    public async Task<ActionResult<IEnumerable<MemberDto>>> GetUsers([FromQuery] UserParams userParams)
     {
-        var users = await userRepository.GetMembersAsync();
+        var users = await userRepository.GetMembersAsync(userParams);
+
+        Response.AddPaginationHeader(users);
 
         return Ok(users);
     }
@@ -50,7 +51,7 @@ public class UsersController(IUserRepository userRepository, IMapper mapper,
     {
         var user = await userRepository.GetUserByUsernameAsync(User.GetUsername());
 
-        if (user == null) return BadRequest("Cannot update user");
+        if (user == null) return BadRequest("Could not find user");
 
         var result = await photoService.AddPhotoAsync(file);
 
@@ -62,13 +63,12 @@ public class UsersController(IUserRepository userRepository, IMapper mapper,
             PublicId = result.PublicId
         };
 
-        if (user.Photos.Count == 0) photo.IsMain = true;
-
         user.Photos.Add(photo);
 
-        if (await userRepository.SaveAllAsync()) 
-            return CreatedAtAction(nameof(GetUser), 
-                new {username = user.UserName}, mapper.Map<PhotoDto>(photo));
+        if (await userRepository.SaveAllAsync())
+        {
+            return CreatedAtAction(nameof(GetUser), new { username = user.UserName }, mapper.Map<PhotoDto>(photo));
+        }
 
         return BadRequest("Problem adding photo");
     }
