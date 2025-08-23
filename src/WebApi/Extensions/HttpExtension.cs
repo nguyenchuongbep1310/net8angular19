@@ -1,5 +1,6 @@
 using System.Text.Json;
-using API.Helpers;
+using Application.Helpers;
+using Application.Models;
 
 namespace WebApi.Extensions;
 

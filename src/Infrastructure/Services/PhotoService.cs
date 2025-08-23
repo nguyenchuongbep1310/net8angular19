@@ -1,4 +1,9 @@
 using Application.Interfaces;
+using CloudinaryDotNet;
+using CloudinaryDotNet.Actions;
+using Infrastructure;
+using Microsoft.AspNetCore.Http;
+using Microsoft.Extensions.Options;
 
 namespace Application.Services
 {

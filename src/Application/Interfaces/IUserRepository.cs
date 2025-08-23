@@ -1,4 +1,5 @@
 using Application.DTOs;
+using Application.Models;
 using Domain.Entities;
 
 namespace Application.Interfaces
@@ -12,6 +13,5 @@ namespace Application.Interfaces
         Task<AppUser?> GetUserByUsernameAsync(string username);
         Task<PagedList<MemberDto>> GetMembersAsync(UserParams userParams);
         Task<MemberDto?> GetMemberAsync(string username);
-
     }
 }

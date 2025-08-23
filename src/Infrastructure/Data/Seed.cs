@@ -1,7 +1,7 @@
+using Domain.Entities;
 using System.Security.Cryptography;
 using System.Text;
 using System.Text.Json;
-using Domain.Entities;
 
 namespace Infrastructure.Data
 {

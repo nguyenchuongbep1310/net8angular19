@@ -1,7 +1,11 @@
-using API.Helpers;
 using Application.DTOs;
 using Application.Interfaces;
+using Application.Models;
+using AutoMapper;
+using AutoMapper.QueryableExtensions;
 using Domain.Entities;
+using Infrastructure.Data;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Data
 {

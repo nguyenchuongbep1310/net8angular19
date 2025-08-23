@@ -1,4 +1,4 @@
-namespace API.Helpers;
+namespace Application.Helpers;
 
 public class PaginationHeader(int currentPage, int itemsPerPage, int totalItems, int totalPages)
 {

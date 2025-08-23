@@ -1,12 +1,12 @@
 using System.Security.Claims;
 
-namespace WebApi.Extensions
+namespace Application.Extensions
 {
     public static class ClaimsPrincipleExtensions
     {
         public static string GetUsername(this ClaimsPrincipal user)
         {
-            var username =  user.FindFirst(ClaimTypes.Name)?.Value
+            var username = user.FindFirst(ClaimTypes.Name)?.Value
                 ?? user.FindFirst("name")?.Value
                 ?? user.FindFirst(ClaimTypes.NameIdentifier)?.Value ?? throw new Exception("Claim type not found");
 

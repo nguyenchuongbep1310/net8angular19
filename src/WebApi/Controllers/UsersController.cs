@@ -1,8 +1,8 @@
-using System.Security.Claims;
-using API.DTOs;
-using API.Entities;
-using API.Interfaces;
+using Application.DTOs;
+using Application.Extensions;
+using Application.Interfaces;
 using AutoMapper;
+using Domain.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using WebApi.Extensions;
