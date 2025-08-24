@@ -23,11 +23,6 @@ public class AccountController(DataContext context, ITokenService tokenService,
 
         var user = mapper.Map<AppUser>(registerDto);
 
-
-
-
-
-
         user.UserName = registerDto.Username.ToLower();
         user.PasswordHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(registerDto.Password));
         user.PasswordSalt = hmac.Key;

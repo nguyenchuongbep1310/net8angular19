@@ -246,3 +246,5 @@ src/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfo.cs
 src/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfoInputs.cache
 .vs/Dating/config
 .vs/Dating/CopilotIndices/17.12.38.29086
+src/WebApi/dating.db-shm
+src/WebApi/dating.db-wal
