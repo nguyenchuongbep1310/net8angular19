@@ -242,3 +242,7 @@ TestResult*/
 TestResults/
 coverage.cobertura.xml
 coverage.opencover.xml
+src/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfo.cs
+src/WebApi/obj/Debug/net8.0/WebApi.AssemblyInfoInputs.cache
+.vs/Dating/config
+.vs/Dating/CopilotIndices/17.12.38.29086

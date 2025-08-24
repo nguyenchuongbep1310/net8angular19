@@ -11,7 +11,7 @@ namespace Infrastructure.Data
         {
             if (context.Users.Any()) return;
 
-            var userData = await File.ReadAllTextAsync("Data/UserSeedData.json");
+            var userData = await File.ReadAllTextAsync("UserSeedData.json");
             var options = new JsonSerializerOptions{PropertyNameCaseInsensitive = true};
 
             var users = JsonSerializer.Deserialize<List<AppUser>>(userData, options);
